@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #EEE;
+}
+
+#content {
+  width: 80%;
+  min-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: #FFF;
+}

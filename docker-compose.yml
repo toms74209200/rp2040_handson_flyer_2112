@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  node:
+    image: node:14-alpine
+    working_dir: /usr/src/node
+    volumes:
+      - .:/usr/src/node
+      - node_modules_cache:/usr/src/node/node_modules
+    ports:
+      - 8080:8080
+    command: 
+      sh -c "npm install && node deploy.js"
+
+volumes:
+  node_modules_cache:
+    driver: local
