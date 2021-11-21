@@ -1,4 +1,10 @@
-const markdown_file = location.protocol + '//' + location.hostname + ':' + location.port + '/docs/main.md';
+const markdown_file = (() => {
+  const url = location.href;
+  if (url.includes('html')) {
+    return location.origin + '/docs/main.md';
+  }
+  return url + '/docs/main.md';
+})();
 
 const main = () => {
   fetch(markdown_file)
