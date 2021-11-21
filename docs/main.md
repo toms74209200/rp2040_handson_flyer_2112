@@ -2,6 +2,8 @@
 
 Raspberry Pi Pico 互換機を使用したマイコンプログラミングを行うハンズオンです。
 
+![](docs/co2mo_mov.gif)
+
 ## 要項
 
 ### とき
